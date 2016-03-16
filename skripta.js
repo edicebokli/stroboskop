@@ -2,6 +2,7 @@ window.addEventListener('load', function() {
 	//stran nalozena
 	
 	//Dodaj novo barvo
+	
 	var dodajBarvo = function(event) {
 		var input = document.createElement('button');
         var picker = new jscolor(input);
@@ -12,7 +13,17 @@ window.addEventListener('load', function() {
 	document.querySelector("#novaBarva") 
 		.addEventListener('click', dodajBarvo);
 		
+		
 	//Odstrani barve
+	
+	var odstraniBarve = function(event) {
+		var barve = document.getElementById("barve");
+		barve.innerHTML = "";
+	}
+	document.querySelector("#odstraniBarve") 
+		.addEventListener('click', odstraniBarve);
+		
+	
 	
 	//Stroboskop
 	var vrednosti = [];
