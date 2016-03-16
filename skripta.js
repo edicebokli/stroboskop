@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
 	
 	var odstraniBarve = function(event) {
 		var barve = document.getElementById("barve");
-		barve.innerHTML = "";
+		barve.innerHTML = ""; 
 	}
 	document.querySelector("#odstraniBarve") 
 		.addEventListener('click', odstraniBarve);
